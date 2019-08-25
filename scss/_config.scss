@@ -33,3 +33,39 @@ $background-opacity: 0.6;
         }
     }
 }
+
+//$color is a variable containing colour
+//this is a function
+//if lightness > 40, return black as color
+@function set-text-color($color) {
+    @if (lightness($color) > 40) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+
+//Media Query Mixins
+//small media
+//any css in mediaSm only applies when screen < 500px
+//anything added here is put in @content
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin mediaLg {
+    @media screen and (min-width: 769) and (max-width: 1170px) {
+        @content;
+    }
+}
+@mixin mediaXl {
+    @media screen and (min-width: 1171) {
+        @content;
+    }
+}
