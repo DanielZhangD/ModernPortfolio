@@ -56,7 +56,7 @@
         justify-content: center;
         float: left;
         width: 50%;
-        height: 100vh;
+        height: 30vh;
         overflow:hidden;
     }
 
@@ -78,7 +78,7 @@
     //Branding Side (left)
     &-branding {
         background: rgba(darken($primary-color, 5), 0.9);
-        transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, -100%, 0);
         @include easeOut;
 
         &.show {
@@ -97,16 +97,12 @@
     }
 
     .nav-item {
-        transform: translate3d(600px, 0, 0);
+        transform: translate3d(800px, 0, 0);
         @include easeOut;
 
         &.show {
             //slide from the right
             transform: translate3d(0, 0, 0);
-        }
-
-        &.current > a {
-            color: $secondary-color;
         }
     }
 
