@@ -1,91 +1,33 @@
-.menu-btn {
-  position: absolute;
-  z-index: 3;
-  right: 35px;
-  top: 35px;
-  cursor: pointer;
-  transition: all 0.5s ease-out; }
-  .menu-btn .btn-line {
-    width: 30px;
-    height: 3px;
-    margin: 0 0 5px 0;
-    background: #fff;
-    transition: all 0.5s ease-out; }
-  .menu-btn.close {
-    transform: rotate(360deg); }
-    .menu-btn.close .btn-line:nth-child(1) {
-      transform: rotate(45deg) translate(8px, 8px); }
-    .menu-btn.close .btn-line:nth-child(2) {
-      opacity: 0; }
-    .menu-btn.close .btn-line:nth-child(3) {
-      transform: rotate(-45deg) translate(4px, -4px); }
-
 .menu {
   position: fixed;
   top: 0;
   width: 100%;
-  visibility: hidden; }
-  .menu.show {
-    visibility: visible; }
-  .menu-branding, .menu-nav {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    float: left;
-    width: 50%;
-    height: 30vh;
-    overflow: hidden; }
+  visibility: visible;
+  background-color: transparent; }
   .menu-nav {
-    margin: 0;
-    padding: 0;
-    background: rgba(67, 67, 67, 0.9);
-    list-style: none;
-    transform: translate3d(0, -100%, 0);
-    transition: all 0.5s ease-out; }
-    .menu-nav.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-branding {
-    background: rgba(55, 55, 55, 0.9);
-    transform: translate3d(0, -100%, 0);
-    transition: all 0.5s ease-out; }
-    .menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-    .menu-branding .portrait {
-      width: 250px;
-      height: 250px;
-      background: url("../img/portrait.jpg");
-      border-radius: 50%;
-      border: solid 2px #80e5ff; }
-  .menu .nav-item {
-    transform: translate3d(800px, 0, 0);
-    transition: all 0.5s ease-out; }
-    .menu .nav-item.show {
-      transform: translate3d(0, 0, 0); }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: left;
+    margin: 0 3.25rem;
+    width: 100%;
+    height: 50px;
+    overflow: hidden; }
+    .menu-nav .changeColorMenu {
+      transition: 0.3s all;
+      background-color: black; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 18px;
     text-transform: uppercase;
-    padding: 1rem 0;
-    font-weight: 300;
+    padding: 2rem 0;
+    font-weight: 545;
     color: #fff;
     text-decoration: none;
-    transition: all 0.5s ease-out; }
+    margin: 0 1.25rem; }
     .menu .nav-link:hover {
       color: #80e5ff; }
-
-.nav-item:nth-child(1) {
-  transition-delay: 0.1s; }
-
-.nav-item:nth-child(2) {
-  transition-delay: 0.2s; }
-
-.nav-item:nth-child(3) {
-  transition-delay: 0.3s; }
-
-.nav-item:nth-child(4) {
-  transition-delay: 0.4s; }
 
 * {
   box-sizing: border-box;
@@ -226,13 +168,6 @@ main {
       transition: all 0.5s ease-out; }
       .boxes div:hover span {
         color: #000; }
-
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #2b2b2b;
-  color: #fff;
-  height: 60px; }
 
 @media screen {
   .projects {
