@@ -27,6 +27,7 @@
     text-decoration: none;
     margin: 0 1.25rem; }
     .menu .nav-link:hover {
+      transition: all 0.5s ease-out;
       color: #80e5ff; }
 
 * {
@@ -120,12 +121,17 @@ main {
   .about-info .job {
     background: #003466;
     padding: 0.5rem;
-    border-bottom: #80e5ff 5px solid; }
+    border-bottom: #80e5ff 5px solid;
+    bottom: 0; }
 
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.7rem; }
+  .projects .itemImg {
+    width: 100%;
+    height: auto;
+    overflow: hidden; }
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
@@ -140,6 +146,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
+    transition: all 0.5s ease-out;
     background: #80e5ff;
     color: #000; }
 

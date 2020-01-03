@@ -37,6 +37,7 @@
         text-decoration: none;
         margin: 0 1.25rem;
         &:hover {
+            @include easeOut;
             color: $secondary-color;
         }
     }

@@ -137,6 +137,7 @@ main {
         background: #003466;
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
+        bottom: 0;
     }
 }
 //work / projects
@@ -144,6 +145,11 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.7rem;
+    .itemImg {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
     img {
         width: 100%;
         border: 3px #fff solid;
@@ -163,6 +169,7 @@ main {
     border: 0;
     margin-bottom: 0.3rem;
     &:hover {
+        @include easeOut;
         background: $secondary-color;
         color: set-text-color($secondary-color);
     }
