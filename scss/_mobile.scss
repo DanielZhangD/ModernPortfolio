@@ -51,8 +51,10 @@
         font-size: 5rem;
       }
     }
-  
     .projects {
       grid-template-columns: 1fr;
+    }
+    .menu {
+        align-items: center;
     }
   }
