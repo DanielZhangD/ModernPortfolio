@@ -207,4 +207,7 @@ main {
   .projects {
     grid-template-columns: 1fr; }
   .menu {
-    align-items: center; } }
+    align-items: center;
+    font-size: 12px; }
+  .nav-link {
+    font-size: 12px; } }
